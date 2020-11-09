@@ -1,0 +1,48 @@
+.header {
+  background: #000;
+  box-shadow: 6px 6x 16px #c8c8c8;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0) center no-repeat
+      url("/images/pm61datalogo.svg");
+    margin: 12px 24px 6px 0;
+    float: left;
+    background-size: contain;
+  }
+
+  .ant-menu {
+    line-height: 46px;
+    background: #000;
+
+    &-item {
+      padding-top: 10px !important;
+
+      .ant-btn {
+        color: #fff;
+      }
+
+      &-selected {
+        a {
+          color: @primary-color !important;
+        }
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+
+    &-submenu {
+      padding-top: 10px !important;
+    }
+
+    &-horizontal {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
